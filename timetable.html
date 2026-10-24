@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoBu Martial Arts | Timetable</title>
+    <meta name="description" content="View the weekly timetable for DoBu Martial Arts classes including Jiu-jitsu, Karate, Judo, and Muay Thai training schedules.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo_mark"><i class="fa-solid fa-hand-fist"></i></span>
+                <p>DoBu Martial Arts</p>
+            </div>
+
+            <button class="nav-toggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+
+            <ul class="nav_link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="timetable.html" class="active">Timetable</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="join_tab">
+                    <a href="register.html"><i class="fa-solid fa-user-plus"></i>&nbsp;Join</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Timetable title -->
+        <section id="page-intro">
+            <div class="glow_dot dot1"></div>
+
+            <div class="container">
+                <div class="intro-content reveal">
+                    <span class="title"><i class="fa-solid fa-bolt"></i> Weekly Timetable</span>
+                    <h1>PLAN YOUR
+                        TRAINING.</h1>
+
+                    <div class="path">
+                        <a href="index.html">Home</a> / Weekly Timetable
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timetable -->
+        <div id="timetable">
+            <div class="container">
+                <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:18px">
+                    <button class="btn btn-view table-filter active" data-filter="all">All</button>
+                    <button class="btn btn-view table-filter" data-filter="Jiu-jitsu">Jiu-jitsu</button>
+                    <button class="btn btn-view table-filter" data-filter="Karate">Karate</button>
+                    <button class="btn btn-view table-filter" data-filter="Judo">Judo</button>
+                    <button class="btn btn-view table-filter" data-filter="Muay Thai">Muay Thai</button>
+                    <button class="btn btn-view table-filter" data-filter="Private tuition">Private Tuition</button>
+                    <button class="btn btn-view table-filter" data-filter="Kids">Kids</button>
+                </div>
+
+                <div class="table-wrap reveal">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr data-classes="Jiu-jitsu Karate Judo Jiu-jitsu Muay Thai — —">
+                            <td><strong>06:00–07:30</strong></td>
+                            <td>Jiu-jitsu</td>
+                            <td>Karate</td>
+                            <td>Judo</td>
+                            <td>Jiu-jitsu</td>
+                            <td>Muay Thai</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr data-classes="Muay Thai Private tuition Private tuition Private tuition Jiu-jitsu Private tuition Private tuition">
+                            <td><strong>08:00–10:00</strong></td>
+                            <td>Muay Thai</td>
+                            <td>Private tuition</td>
+                            <td>Private tuition</td>
+                            <td>Private tuition</td>
+                            <td>Jiu-jitsu</td>
+                            <td>Private tuition</td>
+                            <td>Private tuition</td>
+                        </tr>
+                        <tr data-classes="Private tuition Private tuition Private tuition Private tuition Private tuition Judo Karate">
+                            <td><strong>10:30–12:00</strong></td>
+                            <td>Private tuition</td>
+                            <td>Private tuition</td>
+                            <td>Private tuition</td>
+                            <td>Private tuition</td>
+                            <td>Private tuition</td>
+                            <td>Judo</td>
+                            <td>Karate</td>
+                        </tr>
+                        <tr data-classes="Open mat / personal practice Open mat / personal practice Open mat / personal practice Open mat / personal practice Open mat / personal practice Karate Judo">
+                            <td><strong>13:00–14:30</strong></td>
+                            <td>Open mat / personal practice</td>
+                            <td>Open mat / personal practice</td>
+                            <td>Open mat / personal practice</td>
+                            <td>Open mat / personal practice</td>
+                            <td>Open mat / personal practice</td>
+                            <td>Karate</td>
+                            <td>Judo</td>
+                        </tr>
+                        <tr data-classes="Kids jiu-jitsu Kids judo Kids karate Kids jiu-jitsu Kids judo Muay Thai Jiu-jitsu">
+                            <td><strong>15:00–17:00</strong></td>
+                            <td>Kids jiu-jitsu</td>
+                            <td>Kids judo</td>
+                            <td>Kids karate</td>
+                            <td>Kids jiu-jitsu</td>
+                            <td>Kids judo</td>
+                            <td>Muay Thai</td>
+                            <td>Jiu-jitsu</td>
+                        </tr>
+                        <tr data-classes="Karate Muay Thai Judo Jiu-jitsu Muay Thai — —">
+                            <td><strong>17:30–19:00</strong></td>
+                            <td>Karate</td>
+                            <td>Muay Thai</td>
+                            <td>Judo</td>
+                            <td>Jiu-jitsu</td>
+                            <td>Muay Thai</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr data-classes="Jiu-jitsu Judo Jiu-jitsu Karate Private tuition — —">
+                            <td><strong>19:00–21:00</strong></td>
+                            <td>Jiu-jitsu</td>
+                            <td>Judo</td>
+                            <td>Jiu-jitsu</td>
+                            <td>Karate</td>
+                            <td>Private tuition</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>                        
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Message -->
+    <div class="toast" role="status"></div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo">
+                        <span class="logo-mark"><i class="fa-solid fa-hand-fist"></i></span>DoBu Martial Arts
+                    </div>
+                    <p style="margin-top:14px">DoBu Martial Arts is a dedicated gym offering martial arts classes,
+                        fitness training and self-defence opportunities for all levels.
+                    </p>
+                </div>
+
+                <div>
+                    <h2>Explore</h2>
+                    <div class="footer-links">
+                        <a href="about.html">About DoBu</a>
+                        <a href="classes.html">Classes</a>
+                        <a href="timetable.html">Timetable</a>
+                        <a href="membership.html">Membership</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Members</h3>
+                    <div class="footer-links">
+                        <a href="register.html">Create Account</a>
+                        <a href="login.html">Member Login</a>
+                        <a href="dashboard.html">My Dashboard</a>
+                        <a href="booking.html">Book a Class</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Connect</h3>
+                    <p>Questions about classes, membership or facilities? Contact the DoBu team or join the community.
+                    </p>
+                    <div class="socials" style="margin-top:14px">
+                        <a class="social" href="community.html" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a class="social" href="community.html" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a class="social" href="community.html" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a class="social" href="community.html" aria-label="TikTok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <span>© 2026 DoBu Martial Arts. Website project for WebSpace.</span>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

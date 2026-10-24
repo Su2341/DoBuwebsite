@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoBu Martial Arts | Login</title>
+    <meta name="description" content="Log in to your DoBu Martial Arts member account to access your personal dashboard, manage class bookings, and update membership details.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo_mark"><i class="fa-solid fa-hand-fist"></i></span>
+                <p>DoBu Martial Arts</p>
+            </div>
+
+            <button class="nav-toggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+
+            <ul class="nav_link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="timetable.html">Timetable</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="join_tab">
+                    <a href="register.html"><i class="fa-solid fa-user-plus"></i>&nbsp;Join</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Login title -->
+        <section id="page-intro">
+            <div class="glow_dot dot1"></div>
+
+            <div class="container">
+                <div class="intro-content reveal">
+                    <span class="title"><i class="fa-solid fa-bolt"></i> Login</span>
+                    <h1>WELCOME BACK.</h1>
+
+                    <div class="path">
+                        <a href="index.html">Home</a> / Login
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Login Form -->
+        <div id="login">
+            <div class="container auth-wrap">
+                <div class="panel reveal">
+                    <form class="form" id="loginForm">
+                        <div class="field">
+                            <label>Email</label>
+                            <input id="loginEmail" type="email" required placeholder="you@example.com">
+                        </div>
+
+                        <div class="field">
+                            <label>Password</label>
+                            <input id="loginPassword" type="password" required placeholder="Your password">
+                        </div>
+
+                        <button class="btn btn-explore" type="submit">
+                            <i class="fa-solid fa-right-to-bracket"></i> Login
+                        </button>
+                    </form>
+
+                     <div style="display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-top:18px">
+                        <p style="color:var(--muted-color--);font-size:.85rem;margin:0">
+                            <a href="#" id="forgotPassword" style="color:var(--cyan--)">Forgot password?</a>
+                        </p>
+                        <p style="color:var(--muted-color--);font-size:.85rem;margin:0">
+                            No account? <a href="register.html" style="color:var(--cyan--)">Create one</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Message -->
+    <div class="toast" role="status"></div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo">
+                        <span class="logo-mark"><i class="fa-solid fa-hand-fist"></i></span>DoBu Martial Arts
+                    </div>
+                    <p style="margin-top:14px">DoBu Martial Arts is a dedicated gym offering martial arts classes,
+                        fitness training and self-defence opportunities for all levels.
+                    </p>
+                </div>
+
+                <div>
+                    <h2>Explore</h2>
+                    <div class="footer-links">
+                        <a href="about.html">About DoBu</a>
+                        <a href="classes.html">Classes</a>
+                        <a href="timetable.html">Timetable</a>
+                        <a href="membership.html">Membership</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Members</h3>
+                    <div class="footer-links">
+                        <a href="register.html">Create Account</a>
+                        <a href="login.html">Member Login</a>
+                        <a href="dashboard.html">My Dashboard</a>
+                        <a href="booking.html">Book a Class</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Connect</h3>
+                    <p>Questions about classes, membership or facilities? Contact the DoBu team or join the community.
+                    </p>
+                    <div class="socials" style="margin-top:14px">
+                        <a class="social" href="community.html" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a class="social" href="community.html" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a class="social" href="community.html" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a class="social" href="community.html" aria-label="TikTok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <span>© 2026 DoBu Martial Arts. Website project for WebSpace.</span>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

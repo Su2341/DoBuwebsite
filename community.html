@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoBu Martial Arts | Community</title>
+    <meta name="description" content="Join the DoBu Martial Arts community forum. Connect with members, share training tips, participate in discussions, and stay updated with gym news.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo_mark"><i class="fa-solid fa-hand-fist"></i></span>
+                <p>DoBu Martial Arts</p>
+            </div>
+
+            <button class="nav-toggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+
+            <ul class="nav_link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="timetable.html">Timetable</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="community.html" class="active">Community</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="join_tab">
+                    <a href="register.html"><i class="fa-solid fa-user-plus"></i>&nbsp;Join</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Community title -->
+        <section id="page-intro">
+            <div class="glow_dot dot1"></div>
+
+            <div class="container">
+                <div class="intro-content reveal">
+                    <span class="title"><i class="fa-solid fa-bolt"></i> Classes</span>
+                    <h1>TRAIN TOGETHER.</h1>
+
+                    <div class="path">
+                        <a href="index.html">Home</a> / Community
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Forum -->
+        <section id="main">
+            <div class="container">
+                <div class="community">
+
+                    <div class="panel reveal">
+                        <span class="title"><i class="fa-solid fa-comments"></i> Forum</span>
+                        <h2 style="font-family:'Barlow Condensed';font-size:3rem;margin:10px 0">COMMUNITY FORUM</h2>
+                        <div class="feature-list">
+                            <div>
+                                <span class="icon"><i class="fa-solid fa-comments"></i></span>
+                                <div>
+                                    <strong>General Discussion</strong>
+                                    <span>Connect with other members.</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="icon"><i class="fa-solid fa-calendar-check"></i></span>
+                                <div>
+                                    <strong>Events & Updates</strong>
+                                    <span>Share upcoming training and gym news.</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="icon"><i class="fa-solid fa-lightbulb"></i></span>
+                                <div>
+                                    <strong>Training Tips</strong>
+                                    <span>Discuss techniques, routines and progress.</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="icon"><i class="fa-solid fa-people-group"></i></span>
+                                <div>
+                                    <strong>Member Discussion</strong>
+                                    <span>Build a supportive training community.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="btn btn-explore" href="login.html" style="margin-top:18px">
+                            <i class="fa-solid fa-right-to-bracket"></i> Login to Participate
+                        </a>
+                    </div>
+
+                    <div class="panel reveal">
+                        <span class="title"><i class="fa-solid fa-plus"></i> New Topic</span>
+                        <h2 style="font-family:'Barlow Condensed';font-size:3rem;margin:10px 0">START A DISCUSSION.</h2>
+                        <p style="color:var(--muted-color--);margin-bottom:18px">Members must be logged in before creating a new discussion topic.</p>
+                        <form class="form" id="topicForm">
+                            <div class="field">
+                                <label>Topic title</label>
+                                <input id="topicTitle" required placeholder="Enter a discussion title">
+                            </div>
+                            <div class="field">
+                                <label>Category</label>
+                                <select id="topicCategory">
+                                    <option>Martial Arts Advice</option>
+                                    <option>Nutrition & Fitness</option>
+                                    <option>Events & Training</option>
+                                    <option>Member Discussion</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label>Message</label>
+                                <textarea id="topicMessage" required placeholder="Write your message"></textarea>
+                            </div>
+                            <button class="btn btn-explore" type="submit"><i class="fa-solid fa-paper-plane"></i> Post Topic</button>
+                        </form>
+                        <div style="margin-top:28px;padding-top:20px;border-top:1px solid var(--line--)">
+                            <span class="title"><i class="fa-solid fa-clock-rotate-left"></i> Recent Activity</span>
+                            <div id="recentTopics" class="feature-list" style="margin-top:14px">
+                                <div><span class="icon"><i class="fa-solid fa-comments"></i></span><div><strong>Welcome to the DoBu community</strong><span>General Discussion • Recent</span></div></div>
+                                <div><span class="icon"><i class="fa-solid fa-dumbbell"></i></span><div><strong>Share your training goals</strong><span>Training Tips • Popular</span></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel reveal">
+                        <span class="title"><i class="fa-solid fa-share-nodes"></i> Social Media</span>
+                        <h2 style="font-family:'Barlow Condensed';font-size:3rem;margin:10px 0">FOLLOW DOBU.</h2>
+                        <p style="color:var(--muted-color--);margin-bottom:22px">Social media integration can provide
+                            another
+                            channel for class updates, announcements and community content.</p>
+
+                        <div class="socials">
+                            <a class="social" href="#" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a class="social" href="#" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a class="social" href="#" aria-label="YouTube">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a class="social" href="#" aria-label="TikTok">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </div>
+
+                        <div class="feature-list">
+                            <div>
+                                <span class="icon"><i class="fa-solid fa-bullhorn"></i></span>
+                                <div>
+                                    <strong>Class updates</strong>
+                                    <span>Share schedule changes and announcements.</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="icon"><i class="fa-solid fa-camera"></i></span>
+                                <div>
+                                    <strong>Training content</strong>
+                                    <span>Showcase activities and gym life.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Message -->
+    <div class="toast" role="status"></div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo">
+                        <span class="logo-mark"><i class="fa-solid fa-hand-fist"></i></span>DoBu Martial Arts
+                    </div>
+                    <p style="margin-top:14px">DoBu Martial Arts is a dedicated gym offering martial arts classes,
+                        fitness training and self-defence opportunities for all levels.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Explore</h3>
+                    <div class="footer-links">
+                        <a href="about.html">About DoBu</a>
+                        <a href="classes.html">Classes</a>
+                        <a href="timetable.html">Timetable</a>
+                        <a href="membership.html">Membership</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Members</h3>
+                    <div class="footer-links">
+                        <a href="register.html">Create Account</a>
+                        <a href="login.html">Member Login</a>
+                        <a href="dashboard.html">My Dashboard</a>
+                        <a href="booking.html">Book a Class</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Connect</h3>
+                    <p>Questions about classes, membership or facilities? Contact the DoBu team or join the community.
+                    </p>
+                    <div class="socials" style="margin-top:14px">
+                        <a class="social" href="community.html" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a class="social" href="community.html" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a class="social" href="community.html" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a class="social" href="community.html" aria-label="TikTok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <span>© 2026 DoBu Martial Arts. Website project for WebSpace.</span>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

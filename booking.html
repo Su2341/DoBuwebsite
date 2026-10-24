@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoBu Martial Arts | Booking</title>
+    <meta name="description" content="Book your martial arts training sessions at DoBu. Select your preferred class, date, and time slot for Jiu-jitsu, Karate, Judo, and Muay Thai.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo_mark"><i class="fa-solid fa-hand-fist"></i></span>
+                <p>DoBu Martial Arts</p>
+            </div>
+
+            <button class="nav-toggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+
+            <ul class="nav_link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="timetable.html">Timetable</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="join_tab">
+                    <a href="register.html"><i class="fa-solid fa-user-plus"></i>&nbsp;Join</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Booking title -->
+        <section id="page-intro">
+            <div class="glow_dot dot1"></div>
+
+            <div class="container">
+                <div class="intro-content reveal">
+                    <span class="title"><i class="fa-solid fa-bolt"></i> Booking</span>
+                    <h1>BOOK A CLASS.</h1>
+                    <p>Choose a class and time.</p>
+
+                    <div class="path">
+                        <a href="index.html">Home</a> / Booking
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Form -->
+        <section id="booking">
+            <div class="container auth-wrap">
+                <div class="panel reveal">
+
+                    <form class="form" id="bookingForm">
+                        <div class="field">
+                            <h1><label>Class</label></h1>
+                            <select id="bookClass">
+                                <option>Jiu-jitsu</option>
+                                <option>Karate</option>
+                                <option>Judo</option>
+                                <option>Muay Thai</option>
+                                <option>Kids jiu-jitsu</option>
+                                <option>Kids judo</option>
+                                <option>Kids karate</option>
+                                <option>Private tuition</option>
+                                <option>Open mat / personal practice</option>
+                            </select>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="field">
+                                <h1><label>Date</label></h1>
+                                <input id="bookDate" type="date" required>
+                            </div>
+
+                            <div class="field">
+                                <h1><label>Time</label></h1>
+                                <select id="bookTime">
+                                    <option>06:00–07:30</option>
+                                    <option>08:00–10:00</option>
+                                    <option>10:30–12:00</option>
+                                    <option>13:00–14:30</option>
+                                    <option>15:00–17:00</option>
+                                    <option>17:30–19:00</option>
+                                    <option>19:00–21:00</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-explore" type="submit">
+                            <i class="fa-solid fa-calendar-check"></i>Confirm Demo Booking
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Message -->
+    <div class="toast" role="status"></div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo">
+                        <span class="logo-mark"><i class="fa-solid fa-hand-fist"></i></span>DoBu Martial Arts
+                    </div>
+                    <p style="margin-top:14px">DoBu Martial Arts is a dedicated gym offering martial arts classes,
+                        fitness training and self-defence opportunities for all levels.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Explore</h3>
+                    <div class="footer-links">
+                        <a href="about.html">About DoBu</a>
+                        <a href="classes.html">Classes</a>
+                        <a href="timetable.html">Timetable</a>
+                        <a href="membership.html">Membership</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Members</h3>
+                    <div class="footer-links">
+                        <a href="register.html">Create Account</a>
+                        <a href="login.html">Member Login</a>
+                        <a href="dashboard.html">My Dashboard</a>
+                        <a href="booking.html">Book a Class</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Connect</h3>
+                    <p>Questions about classes, membership or facilities? Contact the DoBu team or join the community.
+                    </p>
+                    <div class="socials" style="margin-top:14px">
+                        <a class="social" href="community.html" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a class="social" href="community.html" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a class="social" href="community.html" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a class="social" href="community.html" aria-label="TikTok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <span>© 2026 DoBu Martial Arts. Website project for WebSpace.</span>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

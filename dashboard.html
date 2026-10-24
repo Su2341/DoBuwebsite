@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoBu Martial Arts | Dashboard</title>
+    <meta name="description" content="Access your personal DoBu Martial Arts member dashboard. Manage your membership plan, view booked training sessions, and update account details.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo_mark"><i class="fa-solid fa-hand-fist"></i></span>
+                <p>DoBu Martial Arts</p>
+            </div>
+
+            <button class="nav-toggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+
+            <ul class="nav_link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="timetable.html">Timetable</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="join_tab">
+                    <a href="register.html"><i class="fa-solid fa-user-plus"></i>&nbsp;Join</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Dashboard title -->
+        <section id="page-intro">
+            <div class="glow_dot dot1"></div>
+
+            <div class="container">
+                <div class="intro-content reveal">
+                    <span class="title"><i class="fa-solid fa-bolt"></i> Member Area</span>
+                    <h1>YOUR TRAINING DASHBOARD.</h1>
+
+                    <div class="path">
+                        <a href="index.html">Home</a> / Member Area
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard Login -->
+        <div id="main">
+            <div class="container">
+                <div class="panel reveal" id="dashboardGate">
+                    <div class="auth-note">
+                        <i class="fa-solid fa-lock"></i> Please log in to view your member dashboard.
+                    </div>
+                    <a class="btn btn-explore" href="login.html">Go to Login</a>
+                </div>
+
+                <div id="dashboardContent" style="display:none">
+                    <div class="dashboard-grid">
+                        <div class="member-plan">
+                            <span class="title">Member</span>
+                            <strong id="memberName">Member</strong>
+                            <span id="memberPlan" style="color:var(--muted-color--)">Membership</span>
+                        </div>
+
+                        <div class="member-plan">
+                            <span class="title">Account</span>
+                            <strong>Active</strong>
+                            <span id="memberPhone" style="color:var(--muted-color--)">Contact: —</span>
+                        </div>
+                    </div>
+
+                    <div class="community" style="margin-top:20px">
+                        <div class="panel">
+                            <span class="title"><i class="fa-solid fa-id-card"></i> Membership</span>
+                            <h2 style="font-family:'Barlow Condensed';font-size:3rem;margin:10px 0">MY MEMBERSHIP</h2>
+                            <p id="dashDetails" style="color:var(--muted-color--)"></p>
+                            <div class="field" style="margin-top:16px">
+                                <label>Change membership plan</label>
+                                <select id="dashboardPlan">
+                                    <option>Basic — £25/month</option>
+                                    <option>Intermediate — £35/month</option>
+                                    <option>Advanced — £45/month</option>
+                                    <option>Elite — £60/month</option>
+                                    <option>Junior — £25/month</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-view" id="changePlanBtn" type="button" style="margin-top:12px"><i class="fa-solid fa-arrow-up-right-dots"></i> Update Membership</button>
+                            <a class="btn btn-view" href="membership.html" style="margin-top:12px">View Plans</a>
+                        </div>
+
+                        <div class="panel">
+                            <span class="title"><i class="fa-regular fa-calendar-days"></i> Bookings</span>
+                            <h2 style="font-family:'Barlow Condensed';font-size:3rem;margin:10px 0">MY BOOKINGS</h2>
+                            <div id="bookingList" style="color:var(--muted-color--)">No bookings yet.</div>
+                            <a class="btn btn-explore" href="booking.html" style="margin-top:18px">
+                                <i class="fa-solid fa-calendar-plus"></i> Book a Class
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-view" id="logoutBtn" style="margin-top:20px">
+                        <i class="fa-solid fa-right-from-bracket"></i> Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Message -->
+    <div class="toast" role="status"></div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo">
+                        <span class="logo-mark"><i class="fa-solid fa-hand-fist"></i></span>DoBu Martial Arts
+                    </div>
+                    <p style="margin-top:14px">DoBu Martial Arts is a dedicated gym offering martial arts classes,
+                        fitness training and self-defence opportunities for all levels.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Explore</h3>
+                    <div class="footer-links">
+                        <a href="about.html">About DoBu</a>
+                        <a href="classes.html">Classes</a>
+                        <a href="timetable.html">Timetable</a>
+                        <a href="membership.html">Membership</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Members</h3>
+                    <div class="footer-links">
+                        <a href="register.html">Create Account</a>
+                        <a href="login.html">Member Login</a>
+                        <a href="dashboard.html">My Dashboard</a>
+                        <a href="booking.html">Book a Class</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Connect</h3>
+                    <p>Questions about classes, membership or facilities? Contact the DoBu team or join the community.
+                    </p>
+                    <div class="socials" style="margin-top:14px">
+                        <a class="social" href="community.html" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a class="social" href="community.html" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a class="social" href="community.html" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a class="social" href="community.html" aria-label="TikTok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <span>© 2026 DoBu Martial Arts. Website project for WebSpace.</span>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
